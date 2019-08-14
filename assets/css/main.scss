@@ -1,0 +1,31 @@
+// Vendor
+@import
+    "vendor/bootstrap/scss/bootstrap-grid.scss";
+
+// Helpers
+@import
+    "helpers/_functions.scss",
+    "helpers/_mixins.scss";
+
+// Modules
+@import
+    "modules/_variable.scss",
+    "modules/_typhography.scss",
+    "modules/_buttons.scss",
+    "modules/_animations.scss";
+
+// Partials
+@import
+    "partials/_base.scss",
+    "partials/_navigations.scss",
+    "partials/_footer.scss";
+
+// Sections
+@import
+    "sections/_home.scss",
+    "sections/_feature-list.scss",
+    "sections/_mobayar-content.scss",
+    "sections/_static.scss";
+
+@import
+    "partials/_responsive.scss";

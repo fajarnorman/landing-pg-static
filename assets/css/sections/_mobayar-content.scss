@@ -1,0 +1,47 @@
+.mobayar-content{
+    padding-top: 12em;
+    position: relative;
+    padding-bottom: 12em;
+    .title.head{
+        margin-left: 2em;
+    }
+    .content-homes{
+        padding-top: 5em;
+        padding-left: 5em;
+        // width: 95%;
+        .list-content{
+            .item-home{
+                width: 100%;
+                &>div{
+                    max-width: 400px;
+                }
+                &:nth-child(odd){
+                    &>div{
+                        float: left;
+                    }
+                }
+                &:nth-child(even){
+                    &>div{
+                        float: right;
+                    }
+                }
+                img{
+                    max-width: 40px;
+                    margin-bottom: 15px;
+                }
+                .title{
+                    margin-bottom: 5px;
+                }
+                p{
+                    font-size: 18px;
+                    color: $color-dark;
+                    line-height: 35px
+                }
+            }
+        }
+    }
+    &>.container{
+        position: relative;
+        z-index: 1;
+    }
+}

@@ -1,0 +1,205 @@
+$break-tablet-rotate: 1024px;
+$break-tablet: 800px;
+$break-tablet-to-phone: 767px;
+$break-mobile: 500px;
+$break-small-mobile: 320px;
+
+@media (max-width: $break-tablet-rotate){
+}
+
+@media (max-width: $break-tablet){
+	.fc-widget-normal{
+		right: 0 !important;
+		width: auto !important;
+	}
+    a, button{
+        -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+    }
+    html, body{
+        zoom: 1;
+	}
+	header{
+		position: absolute !important;
+		.logo{
+			float: left;
+			opacity: 1 !important;
+			transform: none !important;
+		}
+		.hamburger-menu{
+			display: inline-block;
+			float: right;
+			margin-top: 18px
+		}
+		.mobile-first{
+			float: left;
+			width: 100%;
+			height: 0;
+			visibility: hidden;
+			overflow: hidden;
+			transition: all .3s ease;
+			&.active{
+				height: 250px;
+				visibility: visible;
+			}
+			.menu, .download-menu{
+				float: none;
+				opacity: 1 !important;
+				transform: none !important;
+			}
+			.menu{
+				margin-left: 0;
+				text-align: center;
+				ul{
+					li{
+						display: block;
+						margin-bottom: 25px;
+						a{
+							margin-left: 0;
+						}
+					}
+				}
+			}
+			.download-menu{
+				text-align: center;
+				li.download{
+					a{
+						margin-left: 0;
+					}
+				}
+			}
+		}
+	}
+	.hero-section{
+		min-height: 535px;
+		overflow: hidden;
+		.description-hero{
+			margin-left: 2em;
+			h1{
+				font-size: 38px;
+				line-height: 58px;
+			}
+		}
+		.image-hero{
+			right: -18em;
+			top: 4em;
+			img{
+				max-width: 65%;
+			}
+		}
+	}
+	.info-ebike{
+		.list-info-ebike{
+			ul{
+				li{
+					width: 50%;
+					margin-bottom: 30px;
+				}
+			}
+		}
+	}
+	.spec-container{
+		min-height: 730px;
+		.spec-list{
+			padding-left: 5em;
+		}
+		.jarvis-text-spec{
+			font-size: 10em;
+		}
+		.img-spec{
+			max-width: 70%;
+			top: 8em;
+		}
+	}
+	.locations{
+		.locations-list{
+			padding-left: 6em;
+			li{
+				width: 50%;
+			}
+		}
+	}
+	.contactus{
+		min-height: 500px;
+	}
+    .title{
+        font-size: 36px;
+        &.small{
+            font-size: 20px;
+        }
+    }
+    .contactus-page{
+        .contact-head{
+            .title{
+                font-size: 40px;
+            }
+        }
+    }
+    footer{
+		.copyright{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+        .footer-head{
+            text-align: center;
+            .google-buttons{
+                margin-top: 0;
+            }
+            .float-left, .float-right{
+                float: none !important;
+            }
+        }
+    }
+}
+
+@media (max-width: $break-mobile){
+    .hero-section{
+		.description-hero{
+			margin-left: 0;
+			margin-top: 0;
+		}
+		.image-hero{
+			position: static;
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+	.info-ebike{
+		.list-info-ebike{
+			ul{
+				li{
+					width: 100%;
+					padding: 0;
+				}
+			}
+		}
+	}
+	.spec-container{
+		.spec-list{
+			padding-left: 4em;
+			padding-top: 24em;
+			position: relative;
+			z-index: 10;
+		}
+		.img-spec{
+			max-width: 100%;
+			top: 1em;
+		}
+		.jarvis-text-spec{
+			top: 30%;
+			margin-left: -120px;
+		}
+	}
+	.locations{
+		.locations-list{
+			width: 100%;
+			padding-left: 0;
+		}
+	}
+	.contactus{
+		min-height: 650px;
+		.contact-us-content{
+			width: 80%;
+		}
+	}
+}
